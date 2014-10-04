@@ -37,6 +37,14 @@
                                     <rect key="frame" x="35" y="237" width="234" height="21"/>
                                 </variation>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Years " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Yi-c7-gAz">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="35" y="82" width="97" height="30"/>
+                                </variation>
+                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Salary" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="epG-6w-ZFw">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -57,12 +65,12 @@
                                     <action selector="convertMedicButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GCq-O1-0m7"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Years " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Yi-c7-gAz">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Pay Week" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TnT-eQ-a0j">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="35" y="82" width="97" height="30"/>
+                                    <rect key="frame" x="35" y="191" width="239" height="30"/>
                                 </variation>
                             </textField>
                         </subviews>
@@ -71,18 +79,20 @@
                             <mask key="subviews">
                                 <exclude reference="Ibp-9K-qtj"/>
                                 <exclude reference="ww8-Vz-FiM"/>
+                                <exclude reference="5Yi-c7-gAz"/>
                                 <exclude reference="epG-6w-ZFw"/>
                                 <exclude reference="lXs-X4-G9n"/>
-                                <exclude reference="5Yi-c7-gAz"/>
+                                <exclude reference="TnT-eQ-a0j"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Ibp-9K-qtj"/>
                                 <include reference="ww8-Vz-FiM"/>
+                                <include reference="5Yi-c7-gAz"/>
                                 <include reference="epG-6w-ZFw"/>
                                 <include reference="lXs-X4-G9n"/>
-                                <include reference="5Yi-c7-gAz"/>
+                                <include reference="TnT-eQ-a0j"/>
                             </mask>
                         </variation>
                     </view>
@@ -91,12 +101,13 @@
                         <outlet property="answerLabel" destination="ww8-Vz-FiM" id="7FU-uQ-PeY"/>
                         <outlet property="convertButton" destination="Ibp-9K-qtj" id="fAX-Ru-j1p"/>
                         <outlet property="enterSalaryTextField" destination="epG-6w-ZFw" id="xLq-1K-CRf"/>
+                        <outlet property="enteredPayWeek" destination="TnT-eQ-a0j" id="t4m-4q-1rH"/>
                         <outlet property="yearsWorked" destination="5Yi-c7-gAz" id="T47-Ll-vfn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1269" y="599"/>
+            <point key="canvasLocation" x="1269" y="668"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="g8D-fI-gje">

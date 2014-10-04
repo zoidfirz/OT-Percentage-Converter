@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5E45BEE3-8830-473A-B907-453D91A3F9D9</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AA22ADFE705C48B46800399541D8F4BA4663F6C4</key>
+		<string>https://github.com/zoidfirz/OT-Percentage-Converter.git</string>
+	</dict>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AA22ADFE705C48B46800399541D8F4BA4663F6C4</key>
+		<string>OT%20Percentage%20Calculator</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/zoidfirz/OT-Percentage-Converter.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AA22ADFE705C48B46800399541D8F4BA4663F6C4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AA22ADFE705C48B46800399541D8F4BA4663F6C4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>OT%20Percentage%20Calculator</string>
+		</dict>
+	</array>
+</dict>
+</plist>

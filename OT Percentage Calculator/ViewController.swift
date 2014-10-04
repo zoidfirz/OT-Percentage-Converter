@@ -8,13 +8,16 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var enterSalaryTextField: UITextField!
     @IBOutlet weak var convertButton: UIButton!
     @IBOutlet weak var answerLabel: UILabel!
     @IBOutlet weak var yearsWorked: UITextField!
+    @IBOutlet weak var enteredPayWeek: UITextField!
     
+
     
     
     override func viewDidLoad() {
@@ -34,7 +37,7 @@ class ViewController: UIViewController {
         
         var salaryText = NSString(format:"%.2f percent",salary)
         
-        answerLabel.text = convertsalaryEMT(enterSalaryTextField.text, yearsWorked.text)
+        answerLabel.text = convertsalaryEMT(enterSalaryTextField.text, yearsWorked.text,enteredPayWeek.text)
         
         
     }
@@ -47,12 +50,14 @@ class ViewController: UIViewController {
 }
 
 
-func convertsalaryEMT(enteredSalary: String, enteredYears:String)->String
+func convertsalaryEMT(enteredSalary: String, enteredYears:String, enteredPayWeek:String)->String
 {
     var yearlySalary:Double
     var answer = ""
     var earnedWage = (enteredSalary as NSString).doubleValue
     var hourlyWage = earnedWage/1975
+    var payWeek = (enteredPayWeek as NSString).doubleValue
+    
     
     
        switch enteredYears{
@@ -77,18 +82,27 @@ func convertsalaryEMT(enteredSalary: String, enteredYears:String)->String
         
 
     }
+    //calculate how much has been earned up to the week entered.
+    var baseSoFar = (yearlySalary/1975) * payWeek
+    var earnedSoFar = (earnedWage/1975) * payWeek
     
-    var hourlyEarned = yearlySalary/1975
     
-    var test = hourlyWage - hourlyEarned
     
-    answer = "\(test)"
+    
+    
+
+    
+    
+    
+ //   var test = hourlyWage - hourlyEarned
+    
+   // answer = "\(test)"
     return answer
 }
 
 
 func convertSalaryMEDIC(enteredSalary:String, enteredYears:String, enteredPayWeek:String)->String
-{//add neccerssary salary information, implement an if statement for even weeks.. 
+{//add neccerssary salary information, implement an if statement for even weeks..
     
     var answer=""
     return answer;
